@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+            
+        }
+
+        div:hover > p{
+            display: block;
+            background-image: linear-gradient(to right, white, rgb(170, 170, 116));
+            width: 300px;
+        }
+
+        div:hover {
+            color: rgb(0, 0, 0)
+
+        }
+        #unico {
+            color:rebeccapurple ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o moude em cima do Texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p id="unico"><a href="https://www.youtube.com/user/neymarjr">TEXTO ESCONDIDO..</a></p>
+
+    </div>
+    <p>Fim do EX</p>
+    
+</body>
+</html>
