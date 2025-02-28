@@ -1,12 +1,40 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+}
+
+@font-face {
+    font-family: 'passion one';
+    src: url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&display=swap');
 }
 
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma,  sans-serif;
+    --fonte2: 'passion one', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+article{
+    font-family: var(--fonte3);
+    font-size: 4vw;
+}
+
+article>p{
+    padding-bottom: 2em;
+}
 
 body{
     margin: auto;
@@ -23,7 +51,8 @@ header{
 
 header>h1{
     padding-top: 50px;
-    font-variant: small-caps;
+    font-size: 10vw;
+    font-family: 'passion one';
 }
 
 header>p{
@@ -50,17 +79,35 @@ div{
 div.normal{
     background-color: white;
 }
+.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.685);
+    background-size: cover;
+}
 
-div.imagem{
-    background-color: grey;
+#img01{
     color: white;
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: fixed;
     
-
+    
+}
+#img02{
+   color: white;
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
 }
 
 .imagem>p{
     background-color: rgba(0, 0, 0, 0.432);
-    width: 300px;
+    padding: 5px;
+    display: inline-block;
+    text-shadow: 1px 1px;
 }
 
 
